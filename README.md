@@ -2,7 +2,14 @@
 
  By using this package you can send single/bulk sms. This will save your sms submit history to database also.
 
-##### After installing the package run the command below
+### .env
+```angular2
+SMS_HOST=
+SMS_API_KEY=
+SMS_SENDER_ID=
+```
+
+##### Artisan commands
 
 ```angular2
 php artisan config:cache
@@ -11,9 +18,9 @@ php artisan migrate
 php artisan queue:work
 ```
 
-Browse
+#### Route
 ```angular2
-url/sms
+your_url/sms
 ```
 
 ### Number input
@@ -25,11 +32,4 @@ url/sms
 or
 ```angular2
 01XXXXXXXXX,01XXXXXXXXX
-```
-
-### .env
-```angular2
-SMS_HOST=
-SMS_API_KEY=
-SMS_SENDER_ID=
 ```
