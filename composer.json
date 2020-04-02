@@ -1,0 +1,26 @@
+{
+    "name": "pondit/sms-sender",
+    "description": "this will send single or bulk sms to contact number and save contact to database",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mdahosanhabib",
+            "email": "cseahosan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Pondit\\Sms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pondit\\Sms\\SmsServiceProvider"
+            ]
+        }
+    }
+}
