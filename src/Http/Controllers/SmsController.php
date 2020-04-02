@@ -15,7 +15,7 @@ class SmsController extends Controller
 
     public function index()
     {
-        return view('sms::sms');
+        return view('sms-sender::sms');
     }
 
     public function sendSms(Request $request)
@@ -36,7 +36,7 @@ class SmsController extends Controller
             $data['total_numbers'] = count($numbersArray);
             Sms::create($data);
 
-            return view('sms::sms', ['message'=>'Success !']);
+            return view('sms-sender::sms', ['message'=>'Success !']);
 
         }catch (QueryException $exception){
             dd($exception->getMessage());
